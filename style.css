@@ -390,6 +390,12 @@ figure:hover .description{
 	border-bottom: dotted 1px black;
 }
 
+iframe{
+	width:100%;
+	height:600px;
+	border:0;
+}
+
 
 /* -----------RESPONSIVE-----------*/
 
