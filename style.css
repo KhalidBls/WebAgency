@@ -68,6 +68,52 @@ header{
 	color: rgb(78, 173, 212);
 }
 
+#slider #texte a{
+	text-decoration: none;
+	color:white;
+  	padding-top: 100%;
+  	padding-bottom: 100%;
+}
+#slider #texte{
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
+.bouton {
+	background-color: rgb(78, 173, 212);
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	width:83px;
+}
+#fleche_droite{
+	color:white;
+	position: relative;
+	top:32%;
+	left:98.8%
+}
+#fleche_gauche{
+	color:white;
+	position: relative;
+	top:37%;
+	left:0%;
+}
+
+#rond_gauche{
+	color:grey;
+	opacity:0.7;
+	position: absolute;
+	top:34%;
+	right:98.3%;
+}
+#rond_droit{
+	color:grey;
+	opacity:0.7;
+	position: absolute;
+	top:35%;
+	left:98%;
+}
+
 .trait{
 	height:1px;
 	width:120px;
@@ -76,37 +122,7 @@ header{
 	margin:auto;
 }
 
-#slider #texte a{
-	text-decoration: none;
-	color:white;
-  	padding-top: 100%;
-  	padding-bottom: 100%;
-}
-.bouton {
-	background-color: rgb(78, 173, 212);
-	padding: 10px 10px 10px 10px;
-	border-radius: 5px;
-	width:83px;
-}
-#submit{
-	background-color: rgb(78, 173, 212);
-	width:109px;
-	border-radius:5px;
-	margin-left:24px;
-	padding:3px 3px 3px 3px;
-	border-bottom: 3px solid rgb(84,157,193);
 
-}
-#submit a{
-	text-decoration: none;
-	color:white;
-}
-#slider #texte{
-    width: 100%;
-    position: absolute;
-    top: 180px;
-    left: 100px;
-}
 
 #liste{
 	display:flex;
@@ -114,14 +130,11 @@ header{
 	margin-left:50px;
 }
 
-
-
 #image_liste{
 	display:flex;
 	max-width: 1260px;
 	margin:auto;
 }
-
 
 .topBlock{
 	text-align: center;
@@ -132,6 +145,12 @@ header{
 #services{
 	padding-bottom: 40px;
 }
+.symbole{
+	position: relative;
+	margin:20px 40px auto auto;
+	width:64px;
+	height:64px;
+}
 #navprojets ul li {
 	text-decoration: none;
 	list-style: none;
@@ -139,6 +158,33 @@ header{
 	padding: 15px 15px 15px 15px;
 	background-color: rgb(229,229,229);
 	position: relative;
+}
+.listeResp{
+	display: flex;
+}
+.listeResp div{
+	margin-right:52px;
+}
+
+.listeResp .symbole h3{
+	margin-top:0;
+}
+
+.listeResp .symbole .fas.fa-circle.fa-xs{
+	color: rgb(92, 173, 211);
+    position: absolute;
+    top: 40%;
+    right: -5px;
+}
+.fas.fa-chart-line.fa-2x , .fas.fa-cubes.fa-2x , .fas.fa-chart-pie.fa-2x{
+	color:rgb(92, 173, 211);
+	border: 1px solid rgb(240,240,240);
+	border-radius: 50%;
+	padding: 15px;
+}
+
+.fas.fa-chart-pie.fa-2x{
+	padding: 15px 14px;
 }
 
 #navprojets ul li a{
@@ -189,35 +235,23 @@ header{
  .exemple{
 	width: 235px;
 }
-
-
-#fleche_droite{
-	color:white;
-	position: relative;
-	top:32%;
-	left:98.8%
-}
-#fleche_gauche{
-	color:white;
-	position: relative;
-	top:37%;
-	left:0%;
+#image_liste img{
+	width:510px;
+	height: 319px;
 }
 
-#rond_gauche{
-	color:grey;
-	opacity:0.7;
+.description{
 	position: absolute;
-	top:34%;
-	right:98.3%;
+    top: 63%;
+    left: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0,0.5);
+    width: 100%;
+    height: 56px;
+	opacity:0;
 }
-#rond_droit{
-	color:grey;
-	opacity:0.7;
-	position: absolute;
-	top:35%;
-	left:98%;
-}
+
+
 
 .topBlock .fas.fa-circle.fa-xs{
 	color: rgb(92, 173, 211);
@@ -245,73 +279,6 @@ header{
 #navprojets ul li:hover .fas.fa-caret-down{
     opacity: 1;
 }
-
-#contact{
-	height:600px;
-	position: relative;
-}
-#contact #carte{
-	background-color: rgb(78, 173, 212);
-	height: 600px;
-}
-#carte iframe{
-	opacity:0.8;
-}
-
-.listeResp{
-	display: flex;
-}
-.listeResp div{
-	margin-right:52px;
-}
-
-.symbole{
-	position: relative;
-	margin:20px 40px auto auto;
-	width:64px;
-	height:64px;
-}
-.fas.fa-chart-line.fa-2x , .fas.fa-cubes.fa-2x , .fas.fa-chart-pie.fa-2x{
-	color:rgb(92, 173, 211);
-	border: 1px solid rgb(240,240,240);
-	border-radius: 50%;
-	padding: 15px;
-}
-
-.fas.fa-chart-pie.fa-2x{
-	padding: 15px 14px;
-}
-
-.listeResp .symbole h3{
-	margin-top:0;
-}
-
-.listeResp .symbole .fas.fa-circle.fa-xs{
-	color: rgb(92, 173, 211);
-    position: absolute;
-    top: 40%;
-    right: -5px;
-}
-
-
-
-#image_liste img{
-	width:510px;
-	height: 319px;
-}
-
-.description{
-	position: absolute;
-    top: 63%;
-    left: 0px;
-    color: white;
-    background-color: rgba(0, 0, 0,0.5);
-    width: 100%;
-    height: 56px;
-	opacity:0;
-}
-
-
 .description h4{
 	position: absolute;
     top: -12px;
@@ -350,6 +317,18 @@ figure:hover .description{
     z-index: 1;
 }
 
+#contact{
+	height:600px;
+	position: relative;
+}
+#contact #carte{
+	background-color: rgb(78, 173, 212);
+	height: 600px;
+}
+#carte iframe{
+	opacity:0.8;
+}
+
 #formulaire{
 	background-color:rgba(255,255,255,0.9);
 	width:330px;
@@ -373,7 +352,19 @@ figure:hover .description{
 #formulaire form{
 	text-align: center;
 }
+#submit{
+	background-color: rgb(78, 173, 212);
+	width:109px;
+	border-radius:5px;
+	margin-left:24px;
+	padding:3px 3px 3px 3px;
+	border-bottom: 3px solid rgb(84,157,193);
 
+}
+#submit a{
+	text-decoration: none;
+	color:white;
+}
 #name,#email,#subject,#message{
 	width:270px;
 	padding: 6px 6px 6px 6px;
