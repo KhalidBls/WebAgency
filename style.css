@@ -519,7 +519,7 @@ iframe{
 	}
 	#topnav ul li{
 		padding:2px 2px;
-		margin-right: 0;
+		margin-right: 5px;
 	}
 	#topnav ul li a{
 		font-size: 30px;
@@ -634,5 +634,8 @@ iframe{
 	}
 	#liste{
 		margin-left:15px;
+	}
+	#topnav ul li{
+		margin-right: 0;
 	}
 }
