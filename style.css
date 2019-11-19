@@ -14,7 +14,7 @@ textarea{
 
 /**********LE MENU EN EN-TETE*************/
 
-header{
+#menu{
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
@@ -55,21 +55,32 @@ header{
     padding-top: 29px;
 }
 
+
 /******LA PARTIE DU SLIDER*******/
 
+
 #slider{
-	background-image: url("webagency_images/images/slider/bg1.jpg");
-    width: 100%;
-    height: 465px;
+	background: url("webagency_images/images/slider/bg1.jpg");
+	width: 100%;
+	max-width: 1265px;
+	min-height:435px;
     margin-top: 80px;
     overflow: hidden;
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
 	color:white;
-	max-width: 1353px;
 	margin: 80px auto auto auto;
 }
+
+#timeline{
+    height: 0.7%;
+    width: 35%;
+    background-color: rgb(55, 191, 255);
+    position: absolute;
+    bottom: 0%;
+}
+
 
 #texte strong{
 	color: rgb(78, 173, 212);
@@ -78,13 +89,11 @@ header{
 #slider #texte a{
 	text-decoration: none;
 	color:white;
-  	padding-top: 100%;
-  	padding-bottom: 100%;
 }
 #slider #texte{
-    width: 100%;
+    width: 50%;
     position: absolute;
-    top: 180px;
+    top: 100px;
     left: 100px;
 }
 
@@ -95,33 +104,26 @@ header{
 	border-radius: 5px;
 	width:83px;
 }
-#fleche_droite{
+.fas.fa-angle-right.fa-2x{
 	color:white;
-	position: relative;
-	top:32%;
-	left:98.8%
+	position: absolute;
+	top:50%;
+	left:96.8%;
+	background-color: rgba(0, 0, 0,0.5);
+	padding: 12px 41px 12px 20px;
+    border-radius: 50%;
 }
-#fleche_gauche{
+.fas.fa-angle-left.fa-2x{
 	color:white;
-	position: relative;
-	top:37%;
-	left:0%;
+	position: absolute;
+	top:50%;
+	left:-3%;
+	background-color: rgba(0, 0, 0,0.5);
+	padding: 12px 20px 12px 41px;
+    border-radius: 50%;
 }
 
-#rond_gauche{
-	color:grey;
-	opacity:0.7;
-	position: absolute;
-	top:34%;
-	right:98.3%;
-}
-#rond_droit{
-	color:grey;
-	opacity:0.7;
-	position: absolute;
-	top:35%;
-	left:98%;
-}
+
 
 
 /***** Trait en dessous de mes titres de section*******/
@@ -234,9 +236,35 @@ header{
 
 
 #navprojets ul li:hover a{
-
 	color:white;
 }
+
+/*GARDER LE ALL WORKS EN BLEU*/
+#navprojets ul li:nth-child(1) a{
+	color:white;
+}
+#navprojets ul li:nth-child(1){
+	background-color:rgb(92,173,211);
+	color:white;
+	border-bottom: 3px solid rgb(70, 140, 173);
+}
+
+/**** Le triangle du menu des projets (navprojets)******/
+.fas.fa-caret-down{
+    font-size: 30px;
+    position: absolute;
+    bottom: -20px;
+    right: 37px;
+	color:rgb(70, 140, 173);
+	opacity:0;
+}
+#navprojets ul li:hover .fas.fa-caret-down{
+    opacity: 1;
+}
+#navprojets ul li:nth-child(1) .fas.fa-caret-down{
+	opacity: 1;
+}
+
 #projets{
 	padding-bottom: 40px;
 	background-color:rgb(245,245,245);
@@ -411,11 +439,47 @@ iframe{
 
 /* -----------RESPONSIVE-----------*/
 
-
+@media all and (max-width: 1100px){
+	#slider{
+		min-height:384px;
+		background-size: cover;
+	}
+}
+@media all and (max-width: 1250px){
+	.exemple{
+		width:200px;
+	}
+	.description{
+		top:56%;
+	}
+	#slider{
+		min-height:384px;
+		background-size: cover;
+	}
+}
+@media all and (max-width: 1120px){
+	.exemple{
+		width:165px;
+	}
+	.description{
+		top:47%;
+	}
+	.description p{
+		top:17px;
+	}
+	.description .fas.fa-circle.fa-3x{
+		left:125px;
+	}
+	.far.fa-eye.fa-lg {
+		left:138px;
+	}
+}
 
 @media screen and (max-width: 1000px)
 {
-	
+	#timeline{
+		display:none;
+	}
 	p{
 		width: auto;
 		font-size: 25px;
@@ -431,31 +495,48 @@ iframe{
 		font-size: 24px;
 	}
 	#slider #texte{
-		left:16px;
+		left:28px;
 	}
-	header{
+	#menu{
 		width:100%;
 		position:initial;
-		display: block;
+		flex-direction: column;
+		text-align: center;
 	}
+	
+#navprojets ul li:nth-child(1) a{
+	color:black;
+}
+#navprojets ul li:nth-child(1){
+	background-color: rgb(229,229,229);;
+	color:white;
+	border-bottom: none;
+}
 	#topnav{
 	margin-right: 0;
 	width:100%;
 	}
 	#topnav ul li{
 		padding:2px 2px;
+		margin-right: 5%;
+	}
+	#topnav ul li a{
+		font-size: 30px;
 	}
 
 	.bouton,#submit{
 		font-size: 15px;
 	}
 	
-	.objet{
-		display:none;
-	}
+	.fas.fa-angle-right.fa-2x,fas.fa-angle-left.fa-2x
+{
+	display:none;
+}
 
-
-
+.fas.fa-angle-left.fa-2x,.fas.fa-angle-right.fa-2x
+{
+	display:none;
+}
 	#navprojets{
 		margin-bottom: 108px;;
 	}
@@ -489,12 +570,17 @@ iframe{
 	.fas.fa-caret-down{
 		display:none;
 	}
+	.description{
+		display:none;
+	}
 
 	#exemples{
 		margin-left: auto;
 		margin-right: auto;
 	}
-
+	.exemple{
+		width:251px;
+	}
 	#navprojets ul{
 		flex-direction: column;
 		margin-top:150px;
@@ -510,7 +596,7 @@ iframe{
 	}
 	#formulaire{
 		position: static;
-		width:100%
+		margin:auto;
 	}
 	#formulaire form{
 		text-align:left;
@@ -518,9 +604,18 @@ iframe{
 	}
 }
 
+@media screen and (max-width: 620px){
+	
+	#topnav ul li a {
+		font-size: 20px;
+	}
+	#formulaire {
+		position: static;
+	}
 
+}
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
 	#topnav ul li a{
 		font-size: 17px;
 	}
