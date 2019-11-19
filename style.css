@@ -518,7 +518,7 @@ iframe{
 	}
 	#topnav ul li{
 		padding:2px 2px;
-		margin-right: 5%;
+		margin-right: 0;
 	}
 	#topnav ul li a{
 		font-size: 30px;
